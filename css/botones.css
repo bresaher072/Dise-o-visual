@@ -1,0 +1,36 @@
+@charset "utf-8";
+.btn-arriba {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #6C4DD3;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(108, 77, 211, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+}
+
+.btn-arriba:hover {
+  background-color: #5738BE;
+  transform: translateY(-2px);
+}
+
+.btn-arriba.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+/* CSS Document */
+
